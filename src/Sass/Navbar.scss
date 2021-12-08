@@ -1,0 +1,56 @@
+.costum_navbar {
+  .costum_navbar_nav {
+    border-top: 2px solid $low_gray;
+    border-bottom: 2px solid $low_gray;
+
+    ul {
+      li {
+        a {
+          color: $dark_blue;
+          transition: $short_transition;
+          &:hover {
+            background: transparent;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+
+  // search
+  .navbar_search {
+    .input-group {
+      border-radius: 50px;
+      transition: $normal_transition;
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      button {
+        color: $gray;
+        background: #ced4da;
+        border-radius: 50px;
+        svg {
+          transition: $normal_transition;
+        }
+        &:hover {
+          svg {
+            transform: rotate(43deg);
+          }
+        }
+      }
+
+      input {
+        border-radius: 50px;
+        border: 2px solid #ced4da;
+        transition: $normal_transition;
+        &:focus {
+          box-shadow: none !important;
+        }
+        &::placeholder {
+          color: $light_gray;
+        }
+      }
+    }
+  }
+}

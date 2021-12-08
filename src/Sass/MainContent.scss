@@ -1,0 +1,72 @@
+.main_content {
+  // latest /////////////////////////
+  .latest {
+    .latest_title {
+      font-family: serif;
+      font-weight: bold;
+    }
+
+    .latest_blogs {
+      overflow: hidden;
+
+      .blog_img {
+        filter: brightness(65%);
+      }
+      .blog_source {
+        color: $gray;
+      }
+      .blog_title {
+        font-family: serif;
+        font-weight: bold;
+      }
+      .blog_date {
+        color: $light_gray;
+      }
+      .blog_text {
+        line-height: 30px;
+        font-weight: 500;
+        color: #0000009d;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  // seprating line
+  .seprating_line {
+    background: $low_gray;
+    width: 2px;
+  }
+
+  // popular /////////////////////////
+  .popular {
+    .popular_title {
+      font-family: serif;
+      font-weight: bold;
+    }
+    .popular_list {
+      counter-reset: item;
+      list-style-type: none;
+      .blog_container {
+        border-bottom: 1px solid $low_gray !important;
+        &::before {
+          font-size: 30px;
+          font-family: $playFair_bold;
+          content: "0" counter(item);
+          counter-increment: item;
+          color: $light_gray;
+        }
+
+        .blog_source {
+          color: $light_gray;
+        }
+        .blog_text {
+          font-family: serif;
+          font-size: 21px;
+        }
+        .blog_date {
+          color: $light_gray;
+        }
+      }
+    }
+  }
+}

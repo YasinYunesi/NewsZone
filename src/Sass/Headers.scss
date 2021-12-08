@@ -1,0 +1,133 @@
+.headers {
+  height: 660px;
+
+  // headers big start //////////////////////////////
+  .headers_big {
+    overflow: hidden;
+    .blog {
+      color: $white;
+      &:hover {
+        img {
+          filter: brightness(25%);
+          transform: scale(1.07);
+        }
+      }
+
+      img {
+        filter: brightness(70%);
+        transition: $normal_transition;
+      }
+      h4 {
+        bottom: 30%;
+        color: $light_gray;
+        @media screen and (max-width: 700px) {
+          bottom: 40%;
+        }
+        @media screen and (max-width: 500px) {
+          bottom: 50%;
+        }
+        @media screen and (max-width: 319px) {
+          bottom: 70%;
+        }
+      }
+      h2 {
+        bottom: 13%;
+        font-family: serif;
+        transition: $normal_transition;
+        font-size: 32px;
+        @media screen and (max-width: 1480px) {
+          font-size: 27px;
+        }
+        @media screen and (max-width: 700px) {
+          font-size: 21px;
+          bottom: 15%;
+        }
+        @media screen and (max-width: 500px) {
+          font-size: 19px;
+          bottom: 18%;
+        }
+      }
+      h6 {
+        bottom: 5%;
+        color: $light_gray;
+        @media screen and (max-width: 700px) {
+          font-size: 15px;
+        }
+        @media screen and (max-width: 500px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  // seprating line
+  .seprating_line {
+    background: $low_gray;
+    width: 2px;
+  }
+
+  // headers small start //////////////////////////////
+  .headers_small {
+    .blog {
+      overflow: hidden;
+      color: $white;
+      &:hover {
+        img {
+          filter: brightness(25%);
+          transform: scale(1.1);
+        }
+      }
+      &:first-child {
+        margin-bottom: 10px;
+      }
+      &:last-child {
+        margin-top: 10px;
+      }
+
+      img {
+        filter: brightness(65%);
+        transition: $normal_transition;
+      }
+      h5 {
+        color: $light_gray;
+        bottom: 35%;
+        @media screen and (min-width: 1481px) {
+          bottom: 45%;
+        }
+        @media screen and (min-width: 1200px) and (max-width: 1480px) {
+          bottom: 70%;
+        }
+        @media screen and (max-width: 700px) {
+          bottom: 40%;
+        }
+        @media screen and (max-width: 500px) {
+          bottom: 50%;
+        }
+        @media screen and (max-width: 319px) {
+          bottom: 70%;
+        }
+      }
+      h4 {
+        bottom: 12%;
+        font-family: serif;
+        transition: $normal_transition;
+        @media screen and (max-width: 1480px) {
+          font-size: 25px;
+        }
+        @media screen and (max-width: 700px) {
+          font-size: 21px;
+        }
+        @media screen and (max-width: 500px) {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
+
+// seprating bottom line
+.seprating_bottom_line {
+  hr {
+    padding: 1.3px;
+  }
+}

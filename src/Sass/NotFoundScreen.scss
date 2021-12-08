@@ -1,0 +1,43 @@
+.not_found {
+  background: $dark_blue;
+  color: $white;
+  height: 100vh;
+  .not_found_content {
+    height: 90%;
+    img {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.17;
+    }
+
+    div {
+      z-index: 5;
+      h1 {
+        font-size: 5rem;
+        @media screen and (max-width: 610px) {
+          font-size: 4rem;
+        }
+        @media screen and (max-width: 285px) {
+          font-size: 3rem;
+        }
+      }
+      p {
+        line-height: 2.3rem;
+      }
+      a {
+        background: $gray;
+        color: $white;
+        border-radius: 50px;
+        letter-spacing: 0.8px;
+        opacity: 0.75;
+        transition: $normal_transition;
+        &:hover {
+          transform: scale(1.1);
+          opacity: 1;
+          color: $white;
+        }
+      }
+    }
+  }
+}

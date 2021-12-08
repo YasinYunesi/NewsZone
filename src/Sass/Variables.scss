@@ -1,0 +1,34 @@
+// animations
+@keyframes slide_in {
+  from {
+    width: 0;
+    opacity: 0;
+    display: none;
+  }
+  to {
+    display: block;
+    width: 500%;
+    opacity: 1;
+  }
+}
+
+// fonts
+@font-face {
+  font-family: playFair_bold;
+  src: url(../Assets/Fonts/PlayfairDisplay-Bold.ttf);
+}
+
+// variables
+$white: #ffff;
+$light_white: #f3f4fa;
+$low_gray: #1b1b1b34;
+$light_gray: #919191cc;
+$gray: #1b1b1b9d;
+$dark_blue: #162e37;
+$brown: #783e16;
+$playFair_bold: playFair_bold;
+$long_transition: all 1s ease;
+$normal_transition: all 0.5s ease;
+$short_transition: all 0.2s ease;
+$slide_in: slide_in 0.8s ease-out forwards;
+$slide_out: slide_out 0.8s ease-out forwards;
