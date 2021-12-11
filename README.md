@@ -1,10 +1,60 @@
-# News zone
 
-News zone is a small web app in which you can explore daily and up to date news from all around the world.
+# News Zone
 
-## Used techs
+Hey, I'm Yasin Yunesi. A React JS developer. News zone is a rather small web app I've
+created lately. You can read about the latest news all around the world.
 
-Developed by [React JS](https://www.reactjs.org/), Styled with [Sass](https://sass-lang.com/) and [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/).
-I used the [NewsApi](https://newsapi.org/) which is a great api that contains almost all the old and new news from all around the world. However it may have some slight problems with the images.
 
-#### Visit the app and feel free to leave your ideas for me.
+## Technologies
+
+ - React JS (Javascript library)
+ - Newsapi (Complete news api for deployment)
+ - Bootstrap (Styling and positioning)
+ - Sass (Unique designing)
+
+
+## API Reference
+
+#### Base URL
+
+```http
+  "https://newsapi.org/v2/"
+```
+
+#### Get news (e.g Top headlines)
+
+```http
+  GET ${base_URL}/top-headlines?country=us&category=general&apiKey=${API_KEY}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `api_key`      | `string` | **Required**. Your API key |
+
+#### Search news
+
+```http
+    GET ${base_URL}/everything?q=${query}&apiKey=${API_KEY}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `api_key`      | `string` | **Required**. Your API key |
+| `query`      | `string` | **Required**. The word to search for |
+
+
+
+## Categories
+
+ - Business
+ - Entertainment
+ - General
+ - Health
+ - Science
+ - Sports
+ - Technology
+
+
+## Authors
+
+- [@Yasin-Yunesi](https://findyasinyunesi.vercel.app/)
